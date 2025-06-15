@@ -1,14 +1,27 @@
-# Entornos
+
+gitignore_actualizado = """
+# Python cache y logs
 __pycache__/
 *.pyc
+*.log
 
 # Bases de datos locales
+*.db
 db/*.db
 
-# Datos personales o sensibles
-data/*.csv
+# Datos sensibles o crudos
 .env
+data/*.csv
+data/*.xlsx
+*.zip
+*.pdf
+*.tmp
 
-# Archivos temporales
-*.log
+# Archivos del sistema operativo
 .DS_Store
+Thumbs.db
+
+# Exportaciones y archivos generados
+exportaciones/
+generados/
+outputs/
